@@ -65,13 +65,12 @@ Note: Refer to official documentation on how to execute from eclipse / IntelliJ.
 		-DsecurityToken=${securityToken}
 </p>
 
-* CI dashboard integration can be performed by supplying the below parameters to top-level Maven Targets:
+* CI dashboard integration can be performed by supplying the below maven parameters
 
 		clean
 		install
 		test
 		-DcloudName=${cloudName}
-		-DtestngXmlFile=testng_perfecto.xml
 		-DsecurityToken=${securityToken}
 		-Dreportium-job-name=${JOB_NAME} 
 		-Dreportium-job-number=${BUILD_NUMBER} 
