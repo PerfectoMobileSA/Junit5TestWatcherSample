@@ -54,11 +54,13 @@ Note: Refer to official documentation on how to execute from eclipse / IntelliJ.
 		
 		clean
 		install
+		test
 		
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. If credentials are passed as parameters:
 		
 		clean
 		install
+		test
 		-DcloudName=${cloudName}
 		-DsecurityToken=${securityToken}
 </p>
@@ -67,6 +69,7 @@ Note: Refer to official documentation on how to execute from eclipse / IntelliJ.
 
 		clean
 		install
+		test
 		-DcloudName=${cloudName}
 		-DtestngXmlFile=testng_perfecto.xml
 		-DsecurityToken=${securityToken}
