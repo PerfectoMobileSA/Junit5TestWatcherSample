@@ -89,6 +89,19 @@ public class Utils {
 	}
 
 	/**
+	 * Asserts contains text
+	 * @param WebElement
+	 * @param reportiumClient
+	 * @param text
+	 */
+	public static void assertContainsText(WebElement element, ReportiumClient reportiumClient, String text) {
+		String elementText = element.getText();
+		if(reportiumClient != null)
+			reportiumClient.reportiumAssert("Verify Field: " + elementText , text.contains(elementText));
+		assert elementText.contains(text) : "Actual text : " + elementText + " does not contain the expected text: " +  text;
+	}
+
+	/**
 	 * Assert title
 	 * @param title
 	 * @param reportiumClient
